@@ -196,7 +196,7 @@ public class ReplaceRefsMojo extends AbstractMojo
 						
 						ArrayList<String> newPathStack = new ArrayList<String>();
 						if (parentCount > 0) {
-							for (int i = 0; i < refererPathStack.size() - parentCount; i++) {
+							for (int i = 0; i < refererPathStack.size() - parentCount - 1; i++) {
 								newPathStack.add(refererPathStack.get(i));
 							}
 						} else {
